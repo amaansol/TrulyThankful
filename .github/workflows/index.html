@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Thank You, Sweta</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Open+Sans&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom right, #fff0f5, #ffe4e1);
+      font-family: 'Open Sans', sans-serif;
+      color: #4a2c2a;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+      padding: 30px;
+    }
+
+    .container {
+      background: white;
+      padding: 40px 30px;
+      max-width: 700px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.8em;
+      color: #d94f4f;
+      margin-bottom: 10px;
+    }
+
+    .heart {
+      font-size: 2.5em;
+      animation: pulse 1.5s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+      100% { transform: scale(1); }
+    }
+
+    p {
+      font-size: 1.2em;
+      line-height: 1.8;
+      margin: 20px 0;
+    }
+
+    .highlight {
+      font-weight: bold;
+      color: #a03333;
+    }
+
+    .footer {
+      margin-top: 30px;
+      font-size: 1em;
+      color: #7a5c5c;
+    }
+
+    .audio-control {
+      margin-top: 20px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 1em;
+      background: #d94f4f;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background: #b93c3c;
+    }
+
+    @media screen and (max-width: 768px) {
+      .container {
+        padding: 30px 20px;
+      }
+
+      h1 {
+        font-size: 2em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="heart">❤️</div>
+    <h1>Thank You, Sweta</h1>
+    <p>
+      For always being there.<br>
+      For your quiet strength, your warmth, and your light.<br><br>
+
+      You’ve been someone I could count on without even asking.<br>
+      Through your words, your kindness, and even in silence, you’ve shown me more than most ever have.<br><br>
+
+      <span class="highlight">Sweta, I hope you know how much that means to me.</span><br>
+      You're a rare soul — calm in storms, steady in chaos, kind in moments that matter most.<br><br>
+
+      This page may be simple, but the gratitude behind it is endless.
+    </p>
+
+    <div class="audio-control">
+      <button onclick="toggleAudio()">Play / Pause Music</button>
+    </div>
+
+    <div class="footer">— From someone who sees your quiet magic</div>
+  </div>
+
+  <audio id="bgMusic" loop>
+    <source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_d5a446ed2c.mp3?filename=relaxing-piano-music-14349.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+  </audio>
+
+  <script>
+    const audio = document.getElementById('bgMusic');
+    function toggleAudio() {
+      if (audio.paused) {
+        audio.play();
+      } else {
+        audio.pause();
+      }
+    }
+  </script>
+</body>
+</html>
